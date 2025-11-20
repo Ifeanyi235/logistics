@@ -27,10 +27,10 @@ function Hero (props) {
             </div>
 
             <div id="hero-text" className="flx flx-drc">
-                    <img alt="company logo" className="" src="\images\logo.png"></img>
+                    <img alt="company logo2" className="" src="\images\Logo.png"></img>
                     {/* <h1>Global Simplified</h1> */}
                     <h2>Fast, reliable, and cost-effective shipping solutions for businesses of all sizes</h2>
-                    <motion.button whileHover={{scale: 1.1}} onClick={scrollToSection}>Learn More</motion.button>
+                    <motion.button whileHover={{scale: 1.1}} onClick={scrollToSection} type="button">Learn More</motion.button>
             </div>
         </motion.div>
     )
