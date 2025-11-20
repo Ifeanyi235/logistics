@@ -1,0 +1,24 @@
+#logoSplash {
+    height: 100vh;
+    background: var(--background-gradient);
+    justify-content: center;
+    align-items: center;
+}
+
+#logo1 {
+}
+
+/* #logo2 {
+    height: 60vh;
+    background: green;
+}
+
+#logo3 {
+    height: 40vh;
+    background: blue;
+}
+
+#logo4 {
+    height: 30vh;
+    background: gray;
+} */

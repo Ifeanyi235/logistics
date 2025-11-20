@@ -1,0 +1,128 @@
+#hero {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+}
+
+#bg-hero {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-dark);
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    
+
+    img {
+        /* flex-grow: 1; */
+        min-width: 1024px;
+        width: 100%;
+        background-size: cover;
+        opacity: 0.2;
+    }
+}
+
+#hero-text {
+    color: var(--font-white);
+    align-items: center;
+    /* width: 100%; */
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    gap: 2rem;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    margin-top: 7rem;
+
+    img {
+        width: 25rem;
+        height: auto;
+        filter: drop-shadow(0px 0px 5px  var(--background-dark));
+    }
+
+    button {
+        height: 3rem;
+        background: var(--background-gradient);
+        color: white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        width: 10rem;
+        margin-top: 2rem;
+        font-family: "Play", sans-serif;
+    }
+    
+    h2 {
+        font-family: "Play", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 300;
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 1024px) {
+    #hero-text {
+        width: 100%;
+
+        img {
+            width: 20rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #hero-text {
+        width: 100%;
+        margin-top: 5rem;
+
+        h2 {
+            font-size: 1rem;
+        }
+
+        button {
+            margin-top: 1rem;
+        }
+
+        img {
+            width: 18rem;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    #hero-text {
+        margin-top: 2rem;
+        button {
+            width: 100%;
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media (max-width: 426px) {
+
+    #hero {
+        padding: 2rem 1rem;
+    }
+    #hero-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 376px) {
+    #hero-text {
+        width: 100%;
+
+        img {
+            width: 15rem;
+        }
+    }
+}
