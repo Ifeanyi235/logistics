@@ -64,7 +64,7 @@ function Navbar (props) {
 
     const scrollToSection = (sectionId, page) => {
         const element = document.getElementById(sectionId);
-        setDrop();
+        dispatch(setisOpen(false));
         if (element) { 
             element.scrollIntoView({
                 behavior: 'smooth'
