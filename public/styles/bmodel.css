@@ -146,7 +146,6 @@
 
 @media (max-width: 425px) {
     #value {
-        height: 100%;
         padding: 2rem 1rem;
         h1 {
             font-size: 1.7rem;
@@ -169,5 +168,11 @@
             width: 25vw;
             height: auto;
         }    
+    }
+}
+
+@media (max-width: 325px) {
+    #value {
+        min-height: 100%;
     }
 }
