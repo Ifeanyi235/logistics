@@ -45,7 +45,7 @@ function ChooseUs (props) {
             </motion.div>
             
             <div id="feature-grd" className="grd">
-                {features.map((feature, index) => <motion.div initial={{
+                {features.map((feature, index) => <motion.div key={index} initial={{
                         opacity: 0,
                         y: 20
                     }} whileInView={{

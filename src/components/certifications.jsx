@@ -67,7 +67,7 @@ function Certification (props) {
                 </div>
 
                 <div className="grd slider min-width">
-                        {certificates.map((certificate, index) => <motion.div initial={{
+                        {certificates.map((certificate, index) => <motion.div key={index} initial={{
                             x : windowWidth > 1024 ? (-(windowWidth * 2) - 30) : (windowWidth < 641 ? -1630 : -2470)
                         }} whileInView={{
                                 opacity: 1,

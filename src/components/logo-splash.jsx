@@ -38,7 +38,6 @@ function LogoSplash () {
                         ease: 'easeInOut'
                     }} 
                 className="mb-4" id="logo2">       
-                    {/* <TruckIcon className="" strokeWidth={1.5} /> */}
                 </motion.div>
 
                 <motion.h1 initial={{

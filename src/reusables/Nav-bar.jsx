@@ -9,10 +9,8 @@ import {setisOpen} from "../navOpen"
 function Navbar (props) {
     const isOpen = useSelector((state) => state.navState.isOpen);
     const [isScrolled, setIsScrolled] = useState(false);
-    // const [isOpen, setisOpen] = useState(false);
     const [isMenu, setisMenu] = useState(window.innerWidth < 901);
     const [animateOut, setanimateOut] = useState(false);
-    const [ispageWidth, setispageWidth] = useState(window.innerWidth);
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
@@ -52,7 +50,6 @@ function Navbar (props) {
     useEffect(() => {
         const pageWidth =  () => {
             const page = window.innerWidth;
-            setispageWidth(page);
             setisMenu(window.innerWidth < 901);
         };
 
@@ -105,7 +102,7 @@ function Navbar (props) {
                                 <X />
                         </motion.button>            
                     </div>}
-                    {buttons.map ((button, index) => <motion.button whileHover={{
+                    {buttons.map ((button, index) => <motion.button key={index} whileHover={{
                         y : -5,
                         color : "var(--primary-green)"
                     }} onClick={() => scrollToSection(button.link, button.page)}>

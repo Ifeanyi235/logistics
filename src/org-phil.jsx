@@ -70,7 +70,7 @@ function OrgPhil () {
                 </motion.div>
 
                 <div id="core-grd" className="grd">
-                    {cores.map((Core, index) => <motion.div initial={{
+                    {cores.map((Core, index) => <motion.div key={index} initial={{
                             opacity: 0,
                             y: 20
                         }} whileInView={{

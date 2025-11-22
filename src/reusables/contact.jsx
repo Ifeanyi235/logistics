@@ -41,7 +41,7 @@ function Contact () {
 
             <div className="flx f-width contact-info">
                 <div id="contact-element" className="flx flx-drc">
-                    {elements.map((element, index) => <motion.div initial={{
+                    {elements.map((element, index) => <motion.div key={index} initial={{
                             opacity: 0,
                             y: 20
                         }} whileInView={{
