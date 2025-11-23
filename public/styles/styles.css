@@ -64,6 +64,10 @@ body {
     background: var(--background-dark);
 }
 
+@media (prefers-color-scheme: no-preference) {
+
+}
+
 @media (min-width: 868px) {
     #dropdown {
         #menu {
