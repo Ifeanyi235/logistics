@@ -1,7 +1,7 @@
 #services {
     /* height: calc(100vh - 5rem); */
     width: 100%;
-    background: whitesmoke;
+    background-color: whitesmoke;
     align-items: center;
     text-align: center;
     gap: 3rem;
