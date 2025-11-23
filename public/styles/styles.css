@@ -65,7 +65,10 @@ body {
 }
 
 @media (prefers-color-scheme: no-preference) {
-
+    body {
+        background: white;
+        color: black;
+    }
 }
 
 @media (min-width: 868px) {
