@@ -3,8 +3,7 @@
 }
 
 #bmodel {
-    /* background: var(--background-dark); */
-
+    grid-template: 100% auto / 1fr;
     #navbar {
         background: #0f172ad8;
         -webkit-backdrop-filter: blur(12px);
@@ -31,8 +30,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem 4rem;
-    min-height: 100%;
-    overflow: hidden;
+    /* min-height: 100%; */
+    /* overflow: hidden; */
     /* background-image: url("/images/axiom-pattern.png"); */
 
     h1 {
@@ -100,6 +99,7 @@
 
 @media (max-width: 640px) {
     #bmodel {
+        grid-template: auto auto / 1fr;
         .bg-img {
             bottom: 0;
             width: 320px;
@@ -108,8 +108,8 @@
         }
     }
     #value {
-        min-height: max-content;
         flex-direction: column;
+        justify-content: center;
         padding: 2rem;
         gap: 2rem;
         h1 {
@@ -123,7 +123,7 @@
     }
 
     :root {
-        --cycleWidth: 100vw;
+        --cycleWidth: 100%;
     }
 
     #value-text {
@@ -135,13 +135,20 @@
         margin-top: 0rem;
         height: 70vw;
         img:nth-of-type(1) {
-            width: 70%;
+            height: 100%;
+            width: auto;
         }
 
         img:nth-of-type(2) {
             width: 20vw;
             height: auto;
         }    
+    }
+}
+
+@media (min-height: 540px) {
+    #bmodel {
+        grid-template: 100% auto/ 1fr;
     }
 }
 
@@ -161,21 +168,22 @@
     #value-chain {
         margin-top: 0rem;
         height: 90vw;
-        img:nth-of-type(1) {
-            width: 90%;
-        }
+
 
         img:nth-of-type(2) {
             width: 25vw;
             height: auto;
         }    
     }
+
+    #value-text {
+        margin-top: calc(var(--navheight) + 2rem);
+    }
 }
 
 @media (max-width: 400px) {
     #value {
         justify-content: center;
-        min-height: 100vh;
         padding: 0rem 1rem 2rem 1rem;
     }
 }

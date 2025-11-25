@@ -28,7 +28,7 @@ function Bmodel () {
                     once: false
                 }} transition={{
                     duration: 0.8
-                }} id="bmodel" className="flx flx-drc">
+                }} id="bmodel" className="grd">
             <Navbar tag={"bmodel"}/>
             <motion.div initial={{
                     opacity : 0 
@@ -36,7 +36,7 @@ function Bmodel () {
                     opacity : 0.8
                 }} transition={{
                     duration : 0.3
-                }}className={`${isOpen && "blur"}`} onClick={closeNav}></motion.div>
+                }}className={`${isOpen ? "blur" : "hd"}`} onClick={closeNav}></motion.div>
             
             
             <motion.div initial={{

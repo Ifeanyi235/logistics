@@ -90,8 +90,6 @@ function Certification (props) {
                         </motion.div>)}
                 </div>
             </div>
-
-
         </div>
     )
 }

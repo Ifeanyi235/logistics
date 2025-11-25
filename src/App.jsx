@@ -25,7 +25,7 @@ function App() {
   }
 
   return (
-    <div id="app" className="flx flx-drc" >
+    <div id="app" className="grd" >
       {/* <LogoSplash /> */}
       <Navbar tag={"app"}/>
       <motion.div initial={{
@@ -33,7 +33,7 @@ function App() {
           opacity : 0.8
         }} transition={{
           duration : 0.3
-        }} className={`${isOpen && "blur"}`} onClick={closeNav}></motion.div>
+        }} className={`${isOpen ? "blur" : "hd"}`} onClick={closeNav}></motion.div>
       <Hero/>
       <Services/>
       <ChooseUs />       

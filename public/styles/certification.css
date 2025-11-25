@@ -1,12 +1,13 @@
 #certification {
-    min-height: fit-content;
     width: 100%;
     justify-content: center;
     gap: 3rem;
     text-align: center;
-    padding: 2rem  2rem 2rem 2rem ;
+    padding: 2rem 0rem ;
     background: whitesmoke;
-    overflow: hidden;
+    /* overflow: hidden; */
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.18);
+    
 }
 
 .slider {
@@ -15,7 +16,9 @@
 }
 
 .grd-2 {
+    width: 100%;
     grid-auto-flow: column;
+    overflow: hidden;
 }
 
 .min-width {

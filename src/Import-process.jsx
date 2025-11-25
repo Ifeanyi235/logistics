@@ -20,14 +20,14 @@ function Imports () {
     }
     
      return (
-        <div id="import" className="flx flx-drc">
+        <div id="import" className="grd">
             <Navbar tag={"import"}/>
             <motion.div initial={{
                 opacity : 0 }} whileInView={{
                     opacity : 0.8
                 }} transition={{
                     duration : 0.3
-                }} className={`${isOpen && "blur"}`} onClick={closeNav}></motion.div>
+                }} className={`${isOpen ? "blur" : "hd"}`} onClick={closeNav}></motion.div>
 
 
             <div className="pattern">
@@ -43,10 +43,10 @@ function Imports () {
                     once: true
                 }} transition={{
                     duration: 0.6
-                }}  id="import-process" className="in-flx">
-               <div className="bg-img">
+                }}  id="import-process" className="flx">
+               {/* <div className="bg-img">
 
-               </div>
+               </div> */}
 
                <motion.h1 initial={{
                     opacity: 0,
@@ -88,7 +88,7 @@ function Imports () {
             </motion.div>
 
 
-            <motion.div id="Air-process" className="in-flx">
+            <motion.div id="Air-process" className="flx">
                <div className="bg-img2">
 
                </div>
@@ -125,7 +125,7 @@ function Imports () {
 
             </motion.div>
 
-            <motion.div id="sea-process" className="in-flx">
+            <motion.div id="sea-process" className="flx">
                <div className="bg-img">
 
                </div>

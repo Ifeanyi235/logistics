@@ -2,7 +2,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 100%;
     padding: calc(2rem + var(--navheight))  2rem 2rem 2rem ;
     gap: 4rem;
     background-image: url("/images/axiom-pattern.png");
@@ -60,8 +59,6 @@
 
 @media (max-width: 930px) {
     #feature {
-        min-height: max-content;
-        height: 100%;
     }
     #feature-grd {
         h2 {
@@ -115,7 +112,6 @@
 
 @media (max-width: 640px) {
     #feature {
-        min-height: max-content;
     }
 
     #feature-text {
