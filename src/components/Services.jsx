@@ -75,7 +75,7 @@ function Services (props) {
                         once: true
                     }} transition={{
                         duration: 0.7,
-                        delay: 0.2, 
+                        delay: window.innerWidth > 500 ? 0.5 : 0.2, 
                     }} animate={{
                         rotateY: index === flipped ? 180 : 0
                     }} onClick={() => {setFlipped(true); resetflip(index)}} 

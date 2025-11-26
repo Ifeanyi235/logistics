@@ -30,8 +30,8 @@ function Imports () {
                 }} className={`${isOpen ? "blur" : "hd"}`} onClick={closeNav}></motion.div>
 
 
-            <div className="pattern">
-            </div>
+            {/* <div className="pattern">
+            </div> */}
 
             <motion.div initial={{
                     opacity: 0,
@@ -48,6 +48,9 @@ function Imports () {
 
                </div> */}
 
+                <div className="pattern2">
+                </div>
+
                <motion.h1 initial={{
                     opacity: 0,
                     x: -30
@@ -55,10 +58,9 @@ function Imports () {
                     opacity: 1,
                     x: 0
                 }} viewport={{
-                    once: false
+                    once: true
                 }} transition={{
-                    duration: 0.8,
-                    delay: 0.5
+                    duration: 0.5
                 }}>
                   Nigeria Import <br /> Process Map
                </motion.h1>
@@ -70,10 +72,10 @@ function Imports () {
                     opacity: 1,
                     x: 0
                 }} viewport={{
-                    once: false
+                    once: true
                 }} transition={{
                     duration: 0.8,
-                    delay: 0.5
+                    delay: 0.2
                 }} className="flx flx-drc">
                   <img alt="import process map" src="\images\Import Process.png"/>
 
@@ -89,9 +91,10 @@ function Imports () {
 
 
             <motion.div id="Air-process" className="flx">
-               <div className="bg-img2">
+               {/* <div className="bg-img2">
 
-               </div>
+               </div> */}
+
                <motion.h1 initial={{
                     opacity: 0,
                     x: -30
@@ -99,10 +102,9 @@ function Imports () {
                     opacity: 1,
                     x: 0
                 }} viewport={{
-                    once: false
+                    once: true
                 }} transition={{
-                    duration: 0.8,
-                    delay: 0.5
+                    duration: 0.5
                 }}>
                   Air Freight Customs <br /> Inwards Clearance Process <br /> Lead Times Matrix
                </motion.h1>
@@ -114,10 +116,10 @@ function Imports () {
                     opacity: 1,
                     x: 0
                 }} viewport={{
-                    once: false
+                    once: true
                 }} transition={{
-                    duration: 0.8,
-                    delay: 0.5
+                    duration: 0.5,
+                    delay: 0.2
                 }}className="flx flx-drc">
                   <img alt="import process map" src="\images\Air process.png"/>
                </motion.section>
@@ -126,9 +128,11 @@ function Imports () {
             </motion.div>
 
             <motion.div id="sea-process" className="flx">
-               <div className="bg-img">
+               {/* <div className="bg-img">
 
-               </div>
+               </div> */}
+               <div className="pattern2">
+                </div>
 
                <motion.h1 initial={{
                     opacity: 0,
@@ -137,10 +141,9 @@ function Imports () {
                     opacity: 1,
                     x: 0
                 }} viewport={{
-                    once: false
+                    once: true
                 }} transition={{
-                    duration: 0.8,
-                    delay: 0.5
+                    duration: 0.5
                 }} >
                   Sea Freight Customs <br />Inwards Clearance Process <br /> Lead Times Matrix
                </motion.h1>
@@ -152,10 +155,10 @@ function Imports () {
                     opacity: 1,
                     x: 0
                 }} viewport={{
-                    once: false
+                    once: true
                 }} transition={{
-                    duration: 0.8,
-                    delay: 0.5
+                    duration: 0.5,
+                    delay: 0.2
                 }} className="flx flx-drc">
                   <img alt="import process map" src="\images\Sea process.png"/>
                </motion.section>
