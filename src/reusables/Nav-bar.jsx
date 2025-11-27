@@ -49,7 +49,6 @@ function Navbar (props) {
 
     useEffect(() => {
         const pageWidth =  () => {
-            const page = window.innerWidth;
             setisMenu(window.innerWidth < 901);
         };
 
@@ -59,7 +58,7 @@ function Navbar (props) {
     }, []);
     
 
-    const scrollToSection = (sectionId, page) => {
+    const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
         dispatch(setisOpen(false));
         if (element) { 
@@ -78,7 +77,7 @@ function Navbar (props) {
     }
     return (
         <div id="navbar" className={`flx edg-pd ${isScrolled && 'bg'}`}>
-            <img alt="logo" src="\images\Logo.png"/>
+            <img onClick={() => scrollToSection("/")} alt="logo" src="\images\Logo.png"/>
             {isMenu && <motion.button whileHover={{scale: 1.2}} onClick={setDrop}>
                     <Menu id="menu"/>
             </motion.button>}
@@ -96,7 +95,7 @@ function Navbar (props) {
                         once: false
                     }} id="components" className="flx">
                     {isMenu && <div className="flx">
-                        <img alt="logo" src="\images\Logo.png"/>
+                        <img onClick={() => scrollToSection("/")} alt="logo" src="\images\Logo.png"/>
                         <motion.button whileHover={{scale: 1.2}}
                             onClick={setDrop}>
                                 <X />
@@ -105,7 +104,7 @@ function Navbar (props) {
                     {buttons.map ((button, index) => <motion.button key={index} whileHover={{
                         y : -5,
                         color : "var(--primary-green)"
-                    }} onClick={() => scrollToSection(button.link, button.page)}>
+                    }} onClick={() => scrollToSection(button.link)}>
                         {button.title}
                     </motion.button>)}
             </motion.div>
