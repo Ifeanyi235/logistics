@@ -240,3 +240,20 @@
         }
     }
 }
+
+@media (min-height: 881px) {
+    #core {
+        min-height: 881px;
+    }
+
+    #quotes {
+        min-height: 881px;
+    }
+
+    #orgphil {
+        >div:nth-of-type(5) {
+            min-height: 881px;
+        }
+    }
+
+}

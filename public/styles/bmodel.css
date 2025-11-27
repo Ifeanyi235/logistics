@@ -78,7 +78,7 @@
     }
 
     img:nth-of-type(2) {
-        width: 10vw;
+        width: 30%;
         height: auto;
     }
 }
@@ -187,3 +187,20 @@
         padding: 0rem 1rem 2rem 1rem;
     }
 }
+
+@media (min-height: 881px) {
+    #bmodel {
+        #value {
+            justify-content: space-evenly;
+        }
+        grid-template: 881px 881px / 1fr;
+        #value-chain {
+            width: 504px;
+            height: 504px;
+        }
+        #value-text {
+            width: 45%;
+        }
+    }
+}
+

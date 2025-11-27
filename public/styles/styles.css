@@ -198,6 +198,13 @@ body {
     }
 }
 
+
+@media (min-height: 881px) {
+    #app {
+        grid-template: 881px auto 881px auto 881px 881px / 100vw; 
+    }
+}
+
 .gap {
     gap: 1rem;
 }

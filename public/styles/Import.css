@@ -76,6 +76,7 @@
         color: black;
     }
 
+
     img {
         filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.158));
         width: 100%;
@@ -244,4 +245,18 @@
         }
     }
 
+}
+
+@media (min-height: 881px) {
+    #import {
+        grid-template: repeat(4, 881px) / 100vw;
+
+        #import-process, #Air-process, #sea-process {
+            justify-content: space-evenly;
+            section {
+                width: 964px;
+            }
+        }
+
+    }
 }

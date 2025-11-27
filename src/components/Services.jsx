@@ -1,14 +1,14 @@
-import React, {useState} from "react";
+import React, {useState, useRef, useEffect} from "react";
 import { Plane, ShieldCheck, Factory, Stamp, Speech, Ship} from "lucide-react"
-import { motion } from 'framer-motion';
+import {motion } from 'framer-motion';
 
 function Services (props) {
 
     const [flipped, setFlipped] = useState(false);
+    const [isInView, setIsInView] = useState(false);
+    const cardref = useRef({});
 
     function resetflip (index) {
-        console.log(flipped);
-        console.log(index)
         flipped !== index && setFlipped(index);
 
     }
@@ -45,6 +45,37 @@ function Services (props) {
         backCard: "Provides expert advice on navigating trade regulations, logistics strategies, and optimizing supply chains. Assistance in navigating customs processes and ensuring compliance with international regulations."
     }]
 
+
+    useEffect(() => {
+        // Create a new Intersection Observer
+        const element = cardref.current[0];
+        const observer = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach(entry => {
+                // Check if the element is in view (if it's intersecting with the viewport)
+                if (entry.isIntersecting) {
+                    setIsInView(true); // Element is in view
+                }
+                });
+            },
+            {
+                threshold: 0.6, // 50% of the element should be in view before triggering
+            }
+        );
+
+        // Start observing the element
+        if (cardref.current[0]) {
+            observer.observe(cardref.current[0]);
+        }
+
+        // Clean up the observer when the component is unmounted
+        return () => {
+            if (element) {
+                observer.unobserve(element);
+            }
+        };
+    }, []);
+
     return (
         <div id="services" className="flx flx-drc edg-pd" onClick={props.setopen}>
 
@@ -68,7 +99,7 @@ function Services (props) {
             </motion.div>
 
             <div id="service-grid" className="grd">
-                {service.map((service, index) => <motion.div key={service.title} whileHover={{
+                {service.map((service, index) => <motion.div key={service.title} ref={(el) => (cardref.current[index] = el)}  whileHover={{
                         y: -10
                     }}
                     viewport={{
@@ -80,7 +111,7 @@ function Services (props) {
                         rotateY: index === flipped ? 180 : 0
                     }} onClick={() => {setFlipped(true); resetflip(index)}} 
                     onHoverStart={() => {resetflip(index)}}
-                    onHoverEnd={() => {setFlipped(true);}} className="card flx flx-drc rnd-shd rnd-edg">
+                    onHoverEnd={() => {setFlipped(true);}} className={`${(isInView & index  === 0) ? "flip" : ""} card flx flx-drc rnd-shd rnd-edg`}>
 
                     <motion.div animate={{ 
                             opacity: flipped === index ? 0 : 1                            

@@ -29,6 +29,19 @@
     width: 100%;
     grid-template: 40vh 40vh / repeat(3, 1fr);
     gap: 1rem;
+
+    .flip {
+        animation: initialFlip 1s linear;
+        
+        >div:nth-of-type(1) {
+            animation: frontCard 1s linear;;
+        }
+
+        >div:nth-of-type(2) {
+            animation: backCard 1s linear;
+        }
+
+    }
 }
 
 .card {
@@ -47,6 +60,40 @@
     }
 }
 
+@keyframes initialFlip {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes frontCard {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes backCard {
+    60% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+}
+
 #class-icon {
     width: 4rem;
     height: auto;
@@ -58,8 +105,6 @@
     position: absolute;
     max-width: 100%;
     margin: 0 2rem;
-    /* top: 20%; */
-    /* bottom: 50%; */
     h3 {
         font-size: 1.8rem;
         font-family: "Rubik", sans-serif;
@@ -175,4 +220,10 @@
         grid-template: repeat(6, 200px) / auto;
     }
 
+}
+
+@media (min-height: 880px) {
+    #service-grid {
+        grid-template: 448px 448px / repeat(3, 1fr);
+    }
 }
