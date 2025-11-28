@@ -31,14 +31,14 @@
     gap: 1rem;
 
     .flip {
-        animation: initialFlip 1s linear;
+        animation: initialFlip 1.5s linear;
         
         >div:nth-of-type(1) {
-            animation: frontCard 1s linear;;
+            animation: frontCard 1.5s linear;
         }
 
         >div:nth-of-type(2) {
-            animation: backCard 1s linear;
+            animation: backCard 1.5s linear;
         }
 
     }
@@ -65,7 +65,7 @@
         transform: rotateY(0deg);
     }
 
-    50% {
+    40% {
         transform: rotateY(180deg);
     }
 

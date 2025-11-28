@@ -59,7 +59,7 @@ function Services (props) {
                 });
             },
             {
-                threshold: 0.6, // 50% of the element should be in view before triggering
+                threshold: 1, // 50% of the element should be in view before triggering
             }
         );
 
@@ -111,7 +111,7 @@ function Services (props) {
                         rotateY: index === flipped ? 180 : 0
                     }} onClick={() => {setFlipped(true); resetflip(index)}} 
                     onHoverStart={() => {resetflip(index)}}
-                    onHoverEnd={() => {setFlipped(true);}} className={`${(isInView & index  === 0) ? "flip" : ""} card flx flx-drc rnd-shd rnd-edg`}>
+                    onHoverEnd={() => {setFlipped(true);}} className={`${(isInView & index  === 0 & window.innerWidth < 800) ? "flip" : ""} card flx flx-drc rnd-shd rnd-edg`}>
 
                     <motion.div animate={{ 
                             opacity: flipped === index ? 0 : 1                            
