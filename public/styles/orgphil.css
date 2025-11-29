@@ -65,8 +65,8 @@
 
 #quotes {
     min-height: 100%;
-    justify-content: space-between;
-    padding: calc(2rem + var(--navheight))  2rem 4rem 2rem ;
+    justify-content: space-evenly;
+    padding: 2rem  2rem 4rem 2rem ;
     background: whitesmoke;
     /* background-image: url("/images/axiom-pattern.png"); */
 
@@ -241,7 +241,24 @@
     }
 }
 
-@media (min-height: 881px) {
+@media (min-height: 881px)  {
+    #core {
+        min-height: 100%;
+    }
+
+    #quotes {
+        min-height: 100%;
+    }
+
+    #orgphil {
+        >div:nth-of-type(5) {
+            min-height: 100%;
+        }
+    }
+
+}
+
+@media (min-height: 881px) and (min-width: 800px)  {
     #core {
         min-height: 881px;
     }

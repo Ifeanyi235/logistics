@@ -29,7 +29,7 @@ function Navbar (props) {
     }, {
         title: "Import Process", 
         link : "/Import process",
-        page: "import"
+        page: "import2"
     }, {
         title: "Contact",
         link : "contact",

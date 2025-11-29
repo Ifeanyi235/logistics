@@ -222,7 +222,7 @@
 
 }
 
-@media (min-height: 880px) {
+@media (min-height: 880px) and (min-width: 800px) {
     #service-grid {
         grid-template: 448px 448px / repeat(3, 1fr);
     }

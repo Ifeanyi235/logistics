@@ -32,7 +32,7 @@ body {
     }
 }
 
-#app, #bmodel, #import, #orgphil {
+#app, #bmodel, #import, #orgphil, #import2 {
     position: relative;
     height: 100vh;
     min-height: 528px;
@@ -198,8 +198,13 @@ body {
     }
 }
 
-
 @media (min-height: 881px) {
+    #app {
+        grid-template: 100% auto 100% auto 100% auto / 100vw; 
+    }
+}
+
+@media (min-height: 881px) and (min-width: 800px) {
     #app {
         grid-template: 881px auto 881px auto 881px 881px / 100vw; 
     }

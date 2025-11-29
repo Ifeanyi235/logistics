@@ -188,7 +188,7 @@
     }
 }
 
-@media (min-height: 881px) {
+@media (min-height: 881px) and (min-width: 800px){
     #bmodel {
         #value {
             justify-content: space-evenly;
