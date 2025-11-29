@@ -734,7 +734,7 @@
     }
 }
 
-@media (min-height: 600px){
+@media (min-height: 530px){
     #import {
         grid-template: 100% repeat(3, auto) / 100vw;
     }
