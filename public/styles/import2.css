@@ -736,18 +736,18 @@
 
 @media (min-height: 530px){
     #import {
-        grid-template: 100% repeat(3, auto) / 100vw;
+        grid-template: 100% repeat(3, auto) / 100%;
     }
 }
 
 @media (min-height: 704px) and (min-width: 800px) {
     #import {
-        grid-template: repeat(4, 100%) / 100vw;
+        grid-template: repeat(4, 100%) / 100%;
     }
 }
 
 @media (min-height: 881px) and (min-width: 800px) {
     #import {
-        grid-template: repeat(4, 881px) / 100vw;
+        grid-template: repeat(4, 881px) / 100%;
     }
 }

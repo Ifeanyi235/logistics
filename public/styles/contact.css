@@ -40,6 +40,13 @@
         color: white;
     }
 
+    a {
+        text-decoration: none;
+    }
+
+    p:hover {
+        color: var(--primary-green);
+    }
     p {
         margin-top: 0.5rem;
         font-size: 0.8rem;

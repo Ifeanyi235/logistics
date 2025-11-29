@@ -56,7 +56,7 @@ function Contact () {
                             <element.icon id="element-icon" strokeWidth={1.2}/>
                             <section className="flx flx-drc">
                                 <h2>{element.title}</h2>
-                                <p>{element.description}</p>
+                                <a href="https://maps.app.goo.gl/MMo1kbBCuhQqfovZ6" target="-blank"><p>{element.description}</p></a>
                             </section>
                         
                     </motion.div>)}
