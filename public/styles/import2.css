@@ -734,24 +734,9 @@
     }
 }
 
-@media (min-height: 704px){
+@media (min-height: 600px){
     #import {
         grid-template: 100% repeat(3, auto) / 100vw;
-    }
-
-    #air-frieght {
-    }
-
-    #sea-frieght #sea-diagram {
-        svg {
-            width: 1rem;
-            height: auto;
-        }
-        .info {
-            p:nth-of-type(1), p:nth-of-type(2) {
-                font-size: 0.5rem;
-            }
-        }
     }
 }
 
