@@ -1,5 +1,5 @@
 #import {
-    grid-template: auto auto auto auto / 100%;
+    grid-template: auto  auto auto auto / 100%;
     #navbar {
         background: #0f172ad8;
         -webkit-backdrop-filter: blur(12px);
@@ -679,7 +679,10 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 470px) {
+    #import {
+        grid-template: 100% auto auto auto / 100%;
+    }
     #import-process, #air-frieght, #sea-frieght {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
@@ -694,6 +697,7 @@
     }
 
     #import-process {
+        
         svg {
             height: 1rem;
             width: auto;

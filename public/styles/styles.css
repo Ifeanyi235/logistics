@@ -198,7 +198,13 @@ body {
     }
 }
 
-@media (min-height: 881px) {
+@media (min-height: 704px) {
+    #app {
+        grid-template: 100% auto auto auto 100% auto / 100vw; 
+    }
+}
+
+@media (min-height: 800px) {
     #app {
         grid-template: 100% auto 100% auto 100% auto / 100vw; 
     }
