@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Wallet, Handshake} from "lucide-react"
+import { Mail, MapPinHouse} from "lucide-react"
 import React from "react";
 
 function Contact () {
@@ -7,12 +7,12 @@ function Contact () {
 
     const elements = [{
         title: "Email",
-        icon: Wallet,
+        icon: Mail,
         description: "info@nglogistics.org",
         link: "mailto:info@nglogistics.org"
     }, {
         title: "Office",
-        icon: Handshake,
+        icon: MapPinHouse,
         description: "Naija Global Logistics Ltd. First Floor, Gemini Block, Eleganza Plaza; 1 Commercial Road, Apapa Lagos, Nigeria",
         link: "https://maps.app.goo.gl/MMo1kbBCuhQqfovZ6"
     }]
