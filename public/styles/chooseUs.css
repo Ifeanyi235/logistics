@@ -4,7 +4,7 @@
     text-align: center;
     padding: calc(2rem + var(--navheight))  2rem 2rem 2rem ;
     gap: 4rem;
-    background-image: url("/images/axiom-pattern.png");
+    background-image: url("/images/absurdity.png");
 }
 
 #feature-text {
@@ -58,8 +58,6 @@
 }
 
 @media (max-width: 930px) {
-    #feature {
-    }
     #feature-grd {
         h2 {
             font-size: 1.2rem;
@@ -111,9 +109,6 @@
 }
 
 @media (max-width: 640px) {
-    #feature {
-    }
-
     #feature-text {
         h1 {
             font-size: 2rem;

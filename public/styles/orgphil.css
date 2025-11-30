@@ -18,7 +18,7 @@
     min-height: 100%;
     gap: 4rem;
     padding: calc(2rem + var(--navheight))  2rem 4rem 2rem ;
-    background-image: url("/images/axiom-pattern.png");
+    background-image: url("/images/absurdity.png");
 
 }
 

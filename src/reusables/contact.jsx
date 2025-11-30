@@ -1,25 +1,20 @@
 import { motion } from "framer-motion";
-import { Wallet, ShieldCheck, Handshake} from "lucide-react"
-import React, {useRef} from "react";
+import { Wallet, Handshake} from "lucide-react"
+import React from "react";
 
 function Contact () {
-
-    const fnameRef = useRef ();
-    const emailRef = useRef ();
-    const messageRef = useRef ();
+    const currentYear = new Date().getFullYear();
 
     const elements = [{
         title: "Email",
         icon: Wallet,
-        description: ""
-    }, {
-        title: "Phone",
-        icon: ShieldCheck,
-        description: ""
+        description: "info@nglogistics.org",
+        link: "mailto:info@nglogistics.org"
     }, {
         title: "Office",
         icon: Handshake,
-        description: "Naija Global Logistics Ltd. First Floor, Gemini Block, Eleganza Plaza; 1 Commercial Road, Apapa Lagos, Nigeria"
+        description: "Naija Global Logistics Ltd. First Floor, Gemini Block, Eleganza Plaza; 1 Commercial Road, Apapa Lagos, Nigeria",
+        link: "https://maps.app.goo.gl/MMo1kbBCuhQqfovZ6"
     }]
 
     return (
@@ -56,7 +51,7 @@ function Contact () {
                             <element.icon id="element-icon" strokeWidth={1.2}/>
                             <section className="flx flx-drc">
                                 <h2>{element.title}</h2>
-                                <a href="https://maps.app.goo.gl/MMo1kbBCuhQqfovZ6" target="-blank"><p>{element.description}</p></a>
+                                <a href={element.link} target="-blank"><p>{element.description}</p></a>
                             </section>
                         
                     </motion.div>)}
@@ -74,14 +69,9 @@ function Contact () {
                         duration: 1.0,
                         delay: 0.4
                     }} id="contact-form" className="flx flx-drc">
-                        <input name="fname" type="text" placeholder="Your Name" ref={fnameRef} />
-                        <input name="email" type="email" placeholder="Your Email" ref={emailRef} />
-                        <textarea className="message" name="message" type="text" placeholder="Your Message" ref={messageRef} />
-                        <motion.button whileHover={{
-                            scale: 1.02
-                        }} type="submit" className="rnd-edg">
-                            Send Message
-                        </motion.button>
+                        <p>
+                            <img alt="Logo" src="\images\Picture18.png"/>© {currentYear}  NG Logistics
+                        </p>
                 </motion.form>
             </div>
         </div>

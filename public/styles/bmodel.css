@@ -30,9 +30,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem 4rem;
-    /* min-height: 100%; */
-    /* overflow: hidden; */
-    /* background-image: url("/images/axiom-pattern.png"); */
 
     h1 {
         font-size: 3rem;
