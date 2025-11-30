@@ -57,18 +57,7 @@ function Contact () {
                     </motion.div>)}
                 </div>
                 
-                <motion.form initial={{
-                        opacity: 0,
-                        y: 20
-                    }} whileInView={{
-                        opacity: 1,
-                        y: 0
-                    }} viewport={{
-                        once: false
-                    }} transition={{
-                        duration: 1.0,
-                        delay: 0.4
-                    }} id="contact-form" className="flx flx-drc">
+                <motion.form id="contact-form" className="flx flx-drc">
                         <p>
                             <img alt="Logo" src="\images\Picture18.png"/>© {currentYear}  NG Logistics
                         </p>
