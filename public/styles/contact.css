@@ -3,7 +3,7 @@
     background: var(--background-dark);
     gap: 3rem;
     justify-content: center;
-    padding: calc(2rem + var(--navheight))  2rem 4rem 2rem ;
+    padding: 3rem  2rem 4rem 2rem ;
 }
 
 .contact-info {
@@ -108,7 +108,7 @@
 
 @media (max-width: 767px) {
     #contact {
-        padding: calc(2rem + var(--navheight))  3rem 4rem 3rem ;
+        padding: 3rem 3rem 4rem 3rem ;
     }
 
     #contact-text {
@@ -138,7 +138,7 @@
 
 @media (max-width: 540px) {
     #contact {
-        padding: calc(2rem + var(--navheight))  2rem 2rem 2rem ;
+        padding: 3rem 2rem 2rem 2rem ;
     }
 
     #contact-text {
@@ -170,7 +170,7 @@
 
 @media (max-width: 376px) {
     #contact {
-        padding: var(--navheight)  1rem 2rem 1rem ;
+        padding: 3rem 1rem 2rem 1rem ;
     }
 
     #contact-element {

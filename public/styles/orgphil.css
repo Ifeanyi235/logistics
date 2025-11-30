@@ -64,7 +64,6 @@
 }
 
 #quotes {
-    min-height: 100%;
     justify-content: space-evenly;
     padding: 2rem  2rem 4rem 2rem ;
     background: whitesmoke;
